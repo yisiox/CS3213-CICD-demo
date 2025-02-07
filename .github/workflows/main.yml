@@ -16,7 +16,7 @@ jobs:
   helloworld:
     name: Print Hello World
     # Describes the environment on which this job should run
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     # Different steps of this job
     steps:
       - name: hello
@@ -27,7 +27,7 @@ jobs:
   # begins with CS3213
   checkprefix:
     name: Check Prefix
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       # This is a marketplace workflow to checkout the current branch
       # Without this, you will be working with an empty directory
