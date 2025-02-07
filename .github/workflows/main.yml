@@ -57,4 +57,5 @@ jobs:
           python-version: '3.10'
       # Run your test
       - name: Check Documentation
-        run: ./CS3213_check_doc.py
+        run: |
+          python ./CS3213_check_doc.py
